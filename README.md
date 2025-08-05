@@ -1,8 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday Khushi 🎉</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,9 +46,7 @@
       max-width: 900px;
       margin: auto;
     }
-    .hidden {
-      display: none;
-    }
+    .hidden { display: none; }
     .show { opacity: 1; transition: 1s ease-in; }
     .message p {
       font-size: 1.2rem;
@@ -121,86 +118,73 @@
     }
   </style>
 </head>
-<body>
-
-<!-- 🎵 BACKGROUND MUSIC -->
- <iframe src="https://drive.google.com/file/d/10EjY02zBdnJCOnH6LYU-IS8wSOxXTee6/preview" 
-width="560" height="315" allow="autoplay" allowfullscreen></iframe>
-
-<!-- 🎉 WELCOME -->
-<section class="welcome center" id="welcome">
+<body><!-- 🎵 HIDDEN AUTOPLAY MUSIC --><iframe id="bg-music" src="https://drive.google.com/file/d/10EjY02zBdnJCOnH6LYU-IS8wSOxXTee6/preview?autoplay=1" style="display:none;" allow="autoplay"></iframe><!-- 🎉 WELCOME --><section class="welcome center" id="welcome">
   <h1>Happy Birthday Khushi 🎂</h1>
   <button class="start-btn" onclick="startSite()">Click to Start</button>
-</section>
-
-<!-- 🌸 MAIN CONTENT -->
-<section class="section hidden" id="main">
-
-  <!-- 💌 MESSAGE -->
-  <div class="message show">
-    <h2> Khushi 💖</h2>
+</section><!-- 🌸 MAIN CONTENT --><section class="section hidden" id="main">  <!-- 💌 MESSAGE -->  <div class="message show">
+    <h2>Khushi 💖</h2>
     <p>
-      <!-- WRITE YOUR MESSAGE HERE -->
-      You are the most beautiful blessing in my life... 💕<br>
+      Wishing you a very happy birthday, Khushi! May your day be full of smiles and joy.
     </p>
-  </div>
+  </div>  <!-- 📸 SLIDESHOW -->  <div class="slideshow-container">
+  <img class="slides active" src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview" alt="Slide 1">
+  <img class="slides" src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview" alt="Slide 2">
+  <img class="slides" src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview" alt="Slide 3">
+  <img class="slides" src="https://drive.google.com/file/d/1RL-I7Gq1yTjc14sZuk6Jhf6dlwv99Xcj/preview" alt="Slide 4">
 
-  <!-- 📸 SLIDESHOW -->
-  <div class="slideshow show">
-    <h2>Our Best Memories 📸</h2>
-    <iframe src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview" 
-  src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview"
-      src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview"
-      width="640" height="360" allow="autoplay" allowfullscreen>
-</iframe>
-    <div class="slider-controls">
-      <button class="slider-btn" onclick="prevSlide()">Previous</button>
-      <button class="slider-btn" onclick="nextSlide()">Next</button>
-    </div>
-  </div>
+  <span class="prev" onclick="changeSlide(-1)">❮</span>
+  <span class="next" onclick="changeSlide(1)">❯</span>
+</div>
 
-  <!-- 🌟 REASONS -->
-  <div class="reasons show">
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slides");
+
+  function showSlide(n) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+    slides[n].classList.add("active");
+  }
+
+  function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    showSlide(slideIndex);
+  }
+
+  function autoSlide() {
+    changeSlide(1);
+    setTimeout(autoSlide, 3000); // Change image every 3 seconds
+  }
+
+  // Start auto sliding
+  autoSlide();
+  </div>  <!-- 🌟 REASONS -->  <div class="reasons show">
     <h2>Why You're So Special 🌟</h2>
     <ul>
       <li>Your kindness touches hearts</li>
       <li>Your smile makes everything better</li>
       <li>Tujhse baat kare bina din adhura lagta hai.</li>
       <li>Tu milti nahi roz, par yaadon mein roz hoti hai</li>
-      <!-- Add more -->
     </ul>
-  </div>
-
-  <!-- 🎁 GIFT -->
-  <div class="gift show">
+  </div>  <!-- 🎁 GIFT -->  <div class="gift show">
     <h2>Surprise Box 🎁</h2>
     <div class="gift-box" onclick="revealGift()">Click Me</div>
     <div class="surprise" id="gift-msg">
-      <!-- WRITE YOUR SURPRISE MESSAGE HERE -->
       Behind every gift is a heart that loves you ❤️ — and mine always will.
     </div>
-  </div>
-
-  <!-- 🌹 ENDING -->
-  <div class="ending show">
+  </div>  <!-- 🌹 ENDING -->  <div class="ending show">
     <h2>Made with Love 💝</h2>
     <p>By Madhur</p>
-  </div>
-
-</section>
-
-<!-- 🦶 FOOTER -->
-<footer>
+  </div></section><!-- 🦶 FOOTER --><footer>
   &copy; 2025 | Happy Birthday Khushi | Designed by Madhur
-</footer>
-
-<!-- 🧠 JAVASCRIPT LOGIC -->
-<script>
+</footer><!-- 🧠 JAVASCRIPT LOGIC --><script>
   const slides = [
     "https://via.placeholder.com/800x400?text=Image+1",
     "https://via.placeholder.com/800x400?text=Image+2",
     "https://via.placeholder.com/800x400?text=Image+3"
-    // 👉 Replace these with actual image URLs
   ];
   let current = 0;
 
@@ -221,7 +205,6 @@ width="560" height="315" allow="autoplay" allowfullscreen></iframe>
   function startSite() {
     document.getElementById("welcome").style.display = "none";
     document.getElementById("main").classList.remove("hidden");
-    document.getElementById("bg-music").play();
     showConfetti();
   }
 
@@ -242,7 +225,5 @@ width="560" height="315" allow="autoplay" allowfullscreen></iframe>
       setTimeout(() => confetti.remove(), 3000);
     }
   }
-</script>
-
-</body>
+</script></body>
 </html>
