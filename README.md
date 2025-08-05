@@ -137,11 +137,10 @@
 
   <!-- 💌 MESSAGE -->
   <div class="message show">
-    <h2>Dear Khushi 💖</h2>
+    <h2> Khushi 💖</h2>
     <p>
       <!-- WRITE YOUR MESSAGE HERE -->
       You are the most beautiful blessing in my life... 💕<br>
-      (write more here...)
     </p>
   </div>
 
@@ -161,8 +160,8 @@
     <ul>
       <li>Your kindness touches hearts</li>
       <li>Your smile makes everything better</li>
-      <li>You never give up</li>
-      <li>You're simply amazing</li>
+      <li>Tujhse baat kare bina din adhura lagta hai.</li>
+      <li>Tu milti nahi roz, par yaadon mein roz hoti hai</li>
       <!-- Add more -->
     </ul>
   </div>
