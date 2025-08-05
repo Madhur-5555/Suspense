@@ -147,7 +147,7 @@
   <!-- 📸 SLIDESHOW -->
   <div class="slideshow show">
     <h2>Our Best Memories 📸</h2>
-    <img id="slide" src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/view?usp=drivesdk" alt="Slide">
+    <img id="slide" src="https://drive.google.com/file/d/1RL-I7Gq1yTjc14sZuk6Jhf6dlwv99Xcj/view?usp=drivesdk" alt="Slide">
     <div class="slider-controls">
       <button class="slider-btn" onclick="prevSlide()">Previous</button>
       <button class="slider-btn" onclick="nextSlide()">Next</button>
