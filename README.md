@@ -147,7 +147,7 @@
   <!-- 📸 SLIDESHOW -->
   <div class="slideshow show">
     <h2>Our Best Memories 📸</h2>
-    <img id="slide" src="https://via.placeholder.com/800x400?text=Image+1" alt="Slide">
+    <img id="slide" src="https://photos.app.goo.gl/hNv2zZytxZ4fLGrT7" alt="Slide">
     <div class="slider-controls">
       <button class="slider-btn" onclick="prevSlide()">Previous</button>
       <button class="slider-btn" onclick="nextSlide()">Next</button>
