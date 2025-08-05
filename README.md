@@ -147,8 +147,10 @@
   <!-- 📸 SLIDESHOW -->
   <div class="slideshow show">
     <h2>Our Best Memories 📸</h2>
-    <iframe src="https://drive.google.com/file/d/1RL-I7Gq1yTjc14sZuk6Jhf6dlwv99Xcj/preview" 
-        width="640" height="360" allow="autoplay" allowfullscreen>
+    <iframe src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview" 
+  src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview"
+      src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview"
+      width="640" height="360" allow="autoplay" allowfullscreen>
 </iframe>
     <div class="slider-controls">
       <button class="slider-btn" onclick="prevSlide()">Previous</button>
