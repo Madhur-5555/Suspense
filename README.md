@@ -130,7 +130,95 @@ width="560" height="315" allow="autoplay" allowfullscreen></iframe>    <!-- 🎉
       <!-- WRITE YOUR MESSAGE HERE -->    
       You are the most beautiful blessing in my life... 💕<br>    
     </p>    
-  </div>      <!-- 📸 SLIDESHOW -->      <div class="slideshow show">    
+  </div> <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slideshow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+      overflow: hidden;
+      border: 5px solid #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .slides {
+      display: none;
+      width: 100%;
+    }
+    .active {
+      display: block;
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      background: rgba(0,0,0,0.5);
+      user-select: none;
+      border-radius: 5px;
+    }
+    .prev {
+      left: 10px;
+    }
+    .next {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+  <img class="slides active" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Slide 1">
+  <img class="slides" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="Slide 2">
+  <img class="slides" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Slide 3">
+  <img class="slides" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Slide 4">
+
+  <span class="prev" onclick="changeSlide(-1)">❮</span>
+  <span class="next" onclick="changeSlide(1)">❯</span>
+</div>
+
+<script>
+  let slideIndex = 0;
+  const slides = document.getElementsByClassName("slides");
+
+  function showSlide(n) {
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+    }
+    slides[n].classList.add("active");
+  }
+
+  function changeSlide(n) {
+    slideIndex += n;
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    showSlide(slideIndex);
+  }
+
+  function autoSlide() {
+    changeSlide(1);
+    setTimeout(autoSlide, 3000); // Change image every 3 seconds
+  }
+
+  // Start auto sliding
+  autoSlide();
+</script>
+
+</body>
+</html>     <!-- 📸 SLIDESHOW -->      <div class="slideshow show">    
     <h2>Our Best Memories 📸</h2>    
     <iframe>
       <div class="mySlides">
