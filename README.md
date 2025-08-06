@@ -1,306 +1,141 @@
-<!DOCTYPE html>    <html lang="en">    
-<head>    
-  <meta charset="UTF-8" />    
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>    
-  <title>Happy Birthday Khushi 🎉</title>    
-  <style>    
-    * { margin: 0; padding: 0; box-sizing: border-box; }    
-    body {    
-      font-family: 'Segoe UI', sans-serif;    
-      background: linear-gradient(to right, #ffe0ec, #f9f9f9);    
-      color: #333;    
-      overflow-x: hidden;    
-    }    
-    .center {    
-      display: flex;    
-      justify-content: center;    
-      align-items: center;    
-    }    
-    .welcome {    
-      height: 100vh;    
-      flex-direction: column;    
-      text-align: center;    
-      background: url('https://i.imgur.com/5H4vLhZ.gif') no-repeat center center/cover;    
-    }    
-    .welcome h1 {    
-      font-size: 3rem;    
-      color: white;    
-      text-shadow: 2px 2px 5px #000;    
-    }    
-    .start-btn {    
-      padding: 14px 28px;    
-      font-size: 1.2rem;    
-      background: #ff3c7d;    
-      color: white;    
-      border: none;    
-      border-radius: 8px;    
-      cursor: pointer;    
-      margin-top: 20px;    
-      transition: 0.3s;    
-    }    
-    .start-btn:hover {    
-      background: #c91a5b;    
-    }    
-    .section {    
-      padding: 50px 20px;    
-      max-width: 900px;    
-      margin: auto;    
-    }    
-    .hidden {    
-      display: none;    
-    }    
-    .show { opacity: 1; transition: 1s ease-in; }    
-    .message p {    
-      font-size: 1.2rem;    
-      margin-top: 15px;    
-    }    
-    .slideshow img {    
-      width: 100%;    
-      max-height: 400px;    
-      object-fit: cover;    
-      border-radius: 12px;    
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);    
-    }    
-    .slider-controls {    
-      display: flex;    
-      justify-content: center;    
-      margin-top: 10px;    
-      gap: 20px;    
-    }    
-    button.slider-btn {    
-      background: #ff4d6d;    
-      color: white;    
-      border: none;    
-      padding: 8px 14px;    
-      border-radius: 6px;    
-      cursor: pointer;    
-    }    
-    ul li {    
-      margin: 12px 0;    
-      background: #fff5f8;    
-      padding: 12px;    
-      border-left: 4px solid #ff3c7d;    
-    }    
-    .gift-box {    
-      width: 120px;    
-      height: 120px;    
-      background: linear-gradient(#ffc0cb, #ff69b4);    
-      margin: 20px auto;    
-      display: flex;    
-      align-items: center;    
-      justify-content: center;    
-      font-size: 1.5rem;    
-      cursor: pointer;    
-      border-radius: 10px;    
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);    
-    }    
-    .surprise {    
-      display: none;    
-      background: #fff0f5;    
-      padding: 20px;    
-      margin-top: 20px;    
-      border-radius: 10px;    
-      text-align: center;    
-    }    
-    .ending {    
-      text-align: center;    
-      margin-top: 50px;    
-    }    
-    footer {    
-      text-align: center;    
-      padding: 20px;    
-      font-size: 0.9rem;    
-      color: #777;    
-    }    
-    @keyframes fall {    
-      to {    
-        transform: translateY(100vh) rotate(360deg);    
-        opacity: 0;    
-      }    
-    }    
-  </style>    
-</head>    
-<body>    <!-- 🎵 BACKGROUND MUSIC -->     <iframe src="https://drive.google.com/file/d/10EjY02zBdnJCOnH6LYU-IS8wSOxXTee6/preview" 
-width="560" height="315" allow="autoplay" allowfullscreen></iframe>    <!-- 🎉 WELCOME -->    <section class="welcome center" id="welcome">    
-  <h1>Happy Birthday Khushi 🎂</h1>    
-  <button class="start-btn" onclick="startSite()">Click to Start</button>    
-</section>    <!-- 🌸 MAIN CONTENT -->    <section class="section hidden" id="main">      <!-- 💌 MESSAGE -->      <div class="message show">    
-    <h2> Khushi 💖</h2>    
-    <p>    
-      <!-- WRITE YOUR MESSAGE HERE -->    
-      You are the most beautiful blessing in my life... 💕<br>    
-    </p>    
-  </div> <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Image Slideshow</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday 🎂</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      background: #f0f0f0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+      color: #333;
+      overflow-x: hidden;
     }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-top: 20px;
+      color: #ff4081;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1.1em;
+      margin: 10px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #e91e63;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .hidden-message {
+      display: none;
+      font-size: 1.5em;
+      margin: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      color: #4a148c;
+    }
+
     .slideshow-container {
-      position: relative;
-      max-width: 800px;
+      max-width: 90%;
       margin: auto;
-      overflow: hidden;
-      border: 5px solid #fff;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      position: relative;
     }
-    .slides {
+
+    .slide {
       display: none;
       width: 100%;
+      border-radius: 10px;
     }
-    .active {
-      display: block;
-    }
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 16px;
-      color: white;
-      font-weight: bold;
-      font-size: 24px;
-      background: rgba(0,0,0,0.5);
-      user-select: none;
-      border-radius: 5px;
-    }
-    .prev {
-      left: 10px;
-    }
-    .next {
-      right: 10px;
+
+    video, img {
+      width: 100%;
+      border-radius: 10px;
+      max-height: 400px;
+      object-fit: cover;
     }
   </style>
 </head>
 <body>
 
-<div class="slideshow-container">
-  <img class="slides active" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Slide 1">
-  <img class="slides" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde" alt="Slide 2">
-  <img class="slides" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Slide 3">
-  <img class="slides" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Slide 4">
+  <h1>🎉 Happy Birthday Khushi 🎉</h1>
 
-  <span class="prev" onclick="changeSlide(-1)">❮</span>
-  <span class="next" onclick="changeSlide(1)">❯</span>
-</div>
+  <div class="center">
+    <button class="button" onclick="playAudio()">Play Music 🎵</button>
+    <button class="button" onclick="toggleMessage()">Show Secret Message 💌</button>
+  </div>
 
-<script>
-  let slideIndex = 0;
-  const slides = document.getElementsByClassName("slides");
+  <audio id="birthdayAudio" src="https://drive.google.com/file/d/10EjY02zBdnJCOnH6LYU-IS8wSOxXTee6/preview"></audio>
 
-  function showSlide(n) {
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].classList.remove("active");
+  <div class="slideshow-container">
+    <div class="slide">
+      <img src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview" alt="Photo 1" />
+    </div>
+    <div class="slide">
+      <img src="https://drive.google.com/file/d/1RL-I7Gq1yTjc14sZuk6Jhf6dlwv99Xcj/preview" alt="Photo 2" />
+    </div>
+    <div class="slide">
+      <video controls>
+        <source src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview">
+        Your browser does not support video.
+      </video>
+    </div>
+    <div class="slide">
+      <img src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview" alt="Photo 3" />
+    </div>
+  </div>
+
+  <div class="center">
+    <p class="hidden-message" id="secretMsg">
+      🥳 Khushi, You are truly special and amazing. May your day be filled with love, surprises, and smiles. Happy Birthday once again! 🎂
+    </p>
+  </div>
+
+  <script>
+    // Audio Play
+    function playAudio() {
+      const audio = document.getElementById('birthdayAudio');
+      audio.play();
     }
-    slides[n].classList.add("active");
-  }
 
-  function changeSlide(n) {
-    slideIndex += n;
-    if (slideIndex >= slides.length) slideIndex = 0;
-    if (slideIndex < 0) slideIndex = slides.length - 1;
-    showSlide(slideIndex);
-  }
+    // Toggle Hidden Message
+    function toggleMessage() {
+      const msg = document.getElementById('secretMsg');
+      msg.style.display = msg.style.display === "none" || msg.style.display === "" ? "block" : "none";
+    }
 
-  function autoSlide() {
-    changeSlide(1);
-    setTimeout(autoSlide, 3000); // Change image every 3 seconds
-  }
+    // Slideshow
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
 
-  // Start auto sliding
-  autoSlide();
-</script>
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // 3 seconds
+    }
+
+    showSlides();
+  </script>
 
 </body>
-</html>     <!-- 📸 SLIDESHOW -->      <div class="slideshow show">    
-    <h2>Our Best Memories 📸</h2>    
-    <iframe>
-      <div class="mySlides">
-src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview"  
-        </iframe>
-    </div>
-      <div class="mySlides">
-    src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview"    
-      src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview"    
-      width="640" height="360" allow="autoplay" allowfullscreen>    
-</iframe>    
-    <div class="slider-controls">    
-      <button class="slider-btn" onclick="prevSlide()">Previous</button>    
-      <button class="slider-btn" onclick="nextSlide()">Next</button>    
-    </div>    
-  </div>      <!-- 🌟 REASONS -->      <div class="reasons show">    
-    <h2>Why You're So Special 🌟</h2>    
-    <ul>    
-      <li>Your kindness touches hearts</li>    
-      <li>Your smile makes everything better</li>    
-      <li>Tujhse baat kare bina din adhura lagta hai.</li>    
-      <li>Tu milti nahi roz, par yaadon mein roz hoti hai</li>    
-      <!-- Add more -->    
-    </ul>    
-  </div>      <!-- 🎁 GIFT -->      <div class="gift show">    
-    <h2>Surprise Box 🎁</h2>    
-    <div class="gift-box" onclick="revealGift()">Click Me</div>    
-    <div class="surprise" id="gift-msg">    
-      <!-- WRITE YOUR SURPRISE MESSAGE HERE -->    
-      Behind every gift is a heart that loves you ❤️ — and mine always will.    
-    </div>    
-  </div>      <!-- 🌹 ENDING -->      <div class="ending show">    
-    <h2>Made with Love 💝</h2>    
-    <p>By Madhur</p>    
-  </div>    </section>    <!-- 🦶 FOOTER -->    <footer>    
-  &copy; 2025 | Happy Birthday Khushi | Designed by Madhur    
-</footer>    <!-- 🧠 JAVASCRIPT LOGIC -->    <script>    
-  const slides = [    
-    "https://via.placeholder.com/800x400?text=Image+1",    
-    "https://via.placeholder.com/800x400?text=Image+2",    
-    "https://via.placeholder.com/800x400?text=Image+3"    
-    // 👉 Replace these with actual image URLs    
-  ];    
-  let current = 0;    
-    
-  function nextSlide() {    
-    current = (current + 1) % slides.length;    
-    document.getElementById("slide").src = slides[current];    
-  }    
-    
-  function prevSlide() {    
-    current = (current - 1 + slides.length) % slides.length;    
-    document.getElementById("slide").src = slides[current];    
-  }    
-    
-  function revealGift() {    
-    document.getElementById("gift-msg").style.display = "block";    
-  }    
-    
-  function startSite() {    
-    document.getElementById("welcome").style.display = "none";    
-    document.getElementById("main").classList.remove("hidden");    
-    document.getElementById("bg-music").play();    
-    showConfetti();    
-  }    
-    
-  function showConfetti() {    
-    for (let i = 0; i < 100; i++) {    
-      const confetti = document.createElement("div");    
-      confetti.style.position = "fixed";    
-      confetti.style.top = Math.random() * window.innerHeight + "px";    
-      confetti.style.left = Math.random() * window.innerWidth + "px";    
-      confetti.style.width = "10px";    
-      confetti.style.height = "10px";    
-      confetti.style.backgroundColor = "#" + Math.floor(Math.random()*16777215).toString(16);    
-      confetti.style.opacity = "0.7";    
-      confetti.style.borderRadius = "50%";    
-      confetti.style.zIndex = 9999;    
-      confetti.style.animation = "fall 3s linear infinite";    
-      document.body.appendChild(confetti);    
-      setTimeout(() => confetti.remove(), 3000);    
-    }    
-  }    
-</script>    </body>    
 </html>
