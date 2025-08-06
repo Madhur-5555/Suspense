@@ -121,7 +121,7 @@
   </style>    
 </head>    
 <body>    <!-- 🎵 BACKGROUND MUSIC -->     <iframe src="https://drive.google.com/file/d/10EjY02zBdnJCOnH6LYU-IS8wSOxXTee6/preview" 
-width="560" height="315" style="display:none;" allow="autoplay" allowfullscreen></iframe>    <!-- 🎉 WELCOME -->    <section class="welcome center" id="welcome">    
+width="560" height="315" allow="autoplay" allowfullscreen></iframe>    <!-- 🎉 WELCOME -->    <section class="welcome center" id="welcome">    
   <h1>Happy Birthday Khushi 🎂</h1>    
   <button class="start-btn" onclick="startSite()">Click to Start</button>    
 </section>    <!-- 🌸 MAIN CONTENT -->    <section class="section hidden" id="main">      <!-- 💌 MESSAGE -->      <div class="message show">    
@@ -132,11 +132,13 @@ width="560" height="315" style="display:none;" allow="autoplay" allowfullscreen>
     </p>    
   </div>      <!-- 📸 SLIDESHOW -->      <div class="slideshow show">    
     <h2>Our Best Memories 📸</h2>    
-    <iframe 
-      div class="mySlides
-src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview"     
+    <iframe>
+      <div class="mySlides">
+src="https://drive.google.com/file/d/1-4vgC5I49ewo02tM1M0WAubgwCUQ9J8X/preview"  
+        </iframe>
     </div>
-      src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview"    
+      <div class="mySlides">
+    src="https://drive.google.com/file/d/1uZvFFqwMtNfIWWQmBXaazVwMn6HwxRnu/preview"    
       src="https://drive.google.com/file/d/1A2UOdfxUJLHkcpgMdKBo4wdpRNNTg5EW/preview"    
       width="640" height="360" allow="autoplay" allowfullscreen>    
 </iframe>    
